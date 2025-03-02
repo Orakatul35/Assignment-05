@@ -24,7 +24,7 @@ let completeButton5 = document.getElementById("completeBtn5");
 let completeButton6 = document.getElementById("completeBtn6");
 let shop = document.getElementById("ShopEase")
 completeButton1.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton1.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -33,7 +33,7 @@ completeButton1.addEventListener("click", function() {
     }
 });
 completeButton2.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton2.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -42,7 +42,7 @@ completeButton2.addEventListener("click", function() {
     }
 });
 completeButton3.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton3.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -51,7 +51,7 @@ completeButton3.addEventListener("click", function() {
     }
 });
 completeButton4.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton4.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -60,7 +60,7 @@ completeButton4.addEventListener("click", function() {
     }
 });
 completeButton5.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton5.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -69,7 +69,7 @@ completeButton5.addEventListener("click", function() {
     }
 });
 completeButton6.addEventListener("click", function() {
-    if (confirm("Are you sure you want to complete this task?")) {
+    if (confirm("Board Updated Successfully")) {
         completeButton6.disabled = true;
         taskSpan.textContent = parseInt(taskSpan.textContent) - 1;
         assignSpan.textContent = parseInt(assignSpan.textContent) + 1;
@@ -80,3 +80,6 @@ completeButton6.addEventListener("click", function() {
 function clearHistory() {
     document.getElementById('history').innerHTML = ''; 
 }
+const today = new Date();
+        const formattedDate = today.toISOString().split('T')[0]; 
+        document.getElementById('date').innerText =  formattedDate;
