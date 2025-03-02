@@ -77,3 +77,6 @@ completeButton6.addEventListener("click", function() {
         messageBox6.textContent = `You completed the task  at ${currentTime}`;
     }
 });
+function clearHistory() {
+    document.getElementById('history').innerHTML = ''; 
+}
