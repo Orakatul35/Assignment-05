@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="p-6 mx-auto bg-cyan-50">
+<body class="p-6 bg-cyan-50">
     <header>
  <!-- Navbar -->
 <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow-md">
@@ -32,7 +32,7 @@
     </div>
 </div>
 </header>
-<div class="flex gap-24 p-6 mt-10 bg-white rounded-lg">
+<div class="flex justify-center gap-24 p-6 mx-auto mt-10 bg-white rounded-lg">
         <!-- Overview Section -->
          <div>
         <div class="flex items-center justify-between p-6 border-b-2 border-dashed">
@@ -63,8 +63,8 @@
         <div class="grid grid-cols-1 gap-4 mt-6 md:grid-cols-2 lg:grid-cols-3">
             <!-- Task Card 1 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span  class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
+                <h3 id="ShopEase" class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -75,8 +75,8 @@
             </div>
             <!-- Task Card 2 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span class="px-3 py-1 text-xs bg-white rounded-md ">CloudSync</span>
+                <h3 class="mt-3 text-lg font-semibold">Add Dark Mode</h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -87,8 +87,8 @@
             </div>
             <!-- Task Card 3 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span class="px-3 py-1 text-xs bg-white rounded-md ">SwiftPay/span>
+                <h3 class="mt-3 text-lg font-semibold">Optimize  Home page </h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -100,8 +100,8 @@
     
             <!-- Task Card 4 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span class="px-3 py-1 text-xs bg-white rounded-md ">Meta</span>
+                <h3 class="mt-3 text-lg font-semibold">Add new emoji 🤲</h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -113,8 +113,8 @@
     
             <!-- Task Card 5 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span class="px-3 py-1 text-xs bg-white rounded-md ">Google LLC</span>
+                <h3 class="mt-3 text-lg font-semibold">Integrate OpenAI API </h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -126,8 +126,8 @@
     
             <!-- Task Card 6 -->
             <div class="p-5 rounded-lg shadow-md bg-cyan-50 w-80">
-                <span class="px-3 py-1 text-xs bg-white rounded-md ">ShopEase</span>
-                <h3 class="mt-3 text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <span class="px-3 py-1 text-xs bg-white rounded-md ">Glassdoar</span>
+                <h3 class="mt-3 text-lg font-semibold">Improve Job searching </h3>
                 <p class="p-3 mt-2 text-sm text-gray-500 bg-white roundrd-lg">
                     Debug using Chrome DevTools, check for overlapping elements...
                 </p>
@@ -139,21 +139,38 @@
         </div>
     </div>
         <!-- Activity Log -->
-        <div class="items-center bg-white border border-b-2 rounded-lg">
-            <div class="border-b-2 border-dashed">
-                <div class="flex items-center justify-between pb-2 p-14 ">
-                    <h2 class="flex items-center gap-2 px-10 text-lg font-semibold">
-                      <img src="./assets/activity.png" alt="">
+        <div class="border border-b-2 rounded-lg bgs-white">
+            <div class="grid justify-center p-12 mx-auto border-b-2 border-dashed">
+                <div class="flex items-center ">
+                    <h2 class="flex items-center gap-2 pb-5 text-lg font-semibold">
+                      <img  src="./assets/activity.png" alt="">
                         Activity Log
                     </h2>
                 </div>
-                <div class="mb-4 px-28">
+                <div class="">
                     <button class="btn btn-primary btn-sm ">Clear History</button>
                 </div>
             </div>
+            <div class="p-3 m-8">
+                <div class="mt-5 text-xl">
+                    <p id ="Message1"></p>
+                </div>
+                <div class="mt-5 text-xl">
+                    <p id ="Message2"></p>
+                </div>
+                <div class="mt-5 text-xl">
+                    <p id ="Message3"></p>
+                </div>
+                <div class="mt-5 text-xl">
+                    <p id ="Message4"></p>
+                </div>
+                <div class="mt-5 text-xl">
+                    <p id ="Message5"></p>
+                </div>
+                <div class="mt-5 text-xl">
+                    <p id ="Message6"></p>
+                </div>
             </div>
-            <div>
-                <p id="message"></p>
             </div>
     </div>
 </main>
